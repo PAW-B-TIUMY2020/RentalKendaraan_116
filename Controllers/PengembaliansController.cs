@@ -25,7 +25,7 @@ namespace RentalKendaraan_116.Controllers
             return View(await rentalKendaraanContext.ToListAsync());
         }
 
-        // GET: Pengembalians/Details/5
+        // GET: 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
