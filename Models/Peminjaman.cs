@@ -13,6 +13,7 @@ namespace RentalKendaraan_116.Models
         }
         [DisplayName("ID")]
         public int IdPeminjaman { get; set; }
+        [Required(ErrorMessage = "Tanggal harus di isi")]
         [DisplayName("Tanggal Peminjaman")]
         public DateTime? TglPeminjaman { get; set; }
         [DisplayName("Kendaraan")]
