@@ -32,5 +32,6 @@ namespace RentalKendaraan_116.Models
         [DisplayName("Kendaraan")]
         public Kendaraan IdKendaraanNavigation { get; set; }
         public ICollection<Pengembalian> Pengembalian { get; set; }
+        public object IdCustomerNavigation { get; internal set; }
     }
 }

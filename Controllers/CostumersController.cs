@@ -19,7 +19,7 @@ namespace RentalKendaraan_116.Controllers
         }
 
         // GET: Costumers
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string ktsd, string searchString, string sortOrder, string currentFilter, int? pageNumbe)
         {
             var rentalKendaraanContext = _context.Costumer.Include(c => c.IdGenderNavigation);
             return View(await rentalKendaraanContext.ToListAsync());
